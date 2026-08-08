@@ -41,12 +41,18 @@
         }
         .ajuste .box {
           position: absolute;
-          top: 0;
-          left: 0;
-          width: 100px;
-          height: 100px;
-          background-color: rgba(0, 0, 0, 0.5);
+          top: 90%;
+          width: 440.5px;
+          height: auto;
+          background-color: var(--bs-body-bg);
+          padding: 20px;
+          border-radius: 10px;
         }
+        .box p {
+          font-size: 14px;
+          line-height: 22.75px;
+        }
+       
 
         @media (max-width: 768px) {
           .ajuste {
@@ -71,7 +77,15 @@
         
             <div class="ajuste col">
                 <img class="flex-fill img-fluid vh-100" src="static/Assets - projeto estacionamento/Professional parking facility background.png" alt="">
-                
+                <div class="box position-absolute start-50 translate-middle">
+
+                    <div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+                        <img src="static/Assets - projeto estacionamento/Icon-carro.svg" alt="" class="img-fluid" style="width: 22px; height: 22px;">
+                        <h3 class="mb-0">Status em Tempo Real</h3>
+                    </div>
+                    <p class="text-start mb-0">O sistema Papaléo Parking otimiza o fluxo de entrada e saída, garantindo segurança e agilidade para o Senac CEP.</p>
+
+                </div>
             </div>
         
         
