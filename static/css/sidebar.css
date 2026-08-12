@@ -1,6 +1,7 @@
     .side-bar {
       min-width: 260px;
       background-color: var(--bs-body-bg);
+      z-index: 10;
     }
 
     .side-bar a {
@@ -29,4 +30,18 @@
       align-items: center;
       gap: 11px;
       padding: 8px 24px 8px 24px;
+    }
+
+
+
+    .appbar {
+      width: 100%;
+      height: 64px;
+      z-index: 9;
+      background-color: var(--bs-body-bg);
+
+    }
+
+    .appbar p, h2 {
+      margin: 0;
     }
