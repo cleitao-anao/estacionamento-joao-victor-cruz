@@ -1,0 +1,11 @@
+.appbar {
+  width: 100%;
+  height: 64px;
+  z-index: 9;
+  background-color: var(--bs-body-bg);
+
+}
+
+.appbar p, h2 {
+  margin: 0;
+}

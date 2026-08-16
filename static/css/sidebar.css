@@ -1,47 +1,41 @@
-    .side-bar {
-      min-width: 260px;
-      background-color: var(--bs-body-bg);
-      z-index: 10;
-    }
+.side-bar {
+  min-width: 260px;
+  background-color: var(--bs-body-bg);
+  z-index: 10;
+}
 
-    .side-bar a {
-      text-decoration: none;
-      color: inherit;
-    }
+.side-bar a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .side-bar h2 {
-      font-size: 20px;
-    }
+.side-bar h2 {
+  font-size: 20px;
+}
 
-    .side-bar h3 {
-      font-size: 10px;
-    }
+.side-bar h3 {
+  font-size: 10px;
+}
 
-    .logo-icon-car {
-      width: 40px;
-      height: 40px;
-      background-color: var(--bs-blue);
-    }
+.logo-icon-car {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bs-blue);
+}
 
-    .opcao {
-      display: flex;
-      width: 100%;
-      justify-content: start;
-      align-items: center;
-      gap: 11px;
-      padding: 8px 24px 8px 24px;
-    }
+.opcao {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 11px;
+  padding: 8px 24px 8px 24px;
+}
 
 
+@media (max-width: 768px) {
 
-    .appbar {
-      width: 100%;
-      height: 64px;
-      z-index: 9;
-      background-color: var(--bs-body-bg);
+  
 
-    }
 
-    .appbar p, h2 {
-      margin: 0;
-    }
+}
