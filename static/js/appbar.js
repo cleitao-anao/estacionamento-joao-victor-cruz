@@ -9,14 +9,42 @@ export class Appbar extends HTMLElement {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="../static/css/base.css">
-        <link rel="stylesheet" href="../static/css/appbar.css">
+  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
+        <style>
+
+            .appbar {
+            width: 100%;
+            height: 64px;
+            z-index: 9;
+            background-color: var(--bs-body-bg);
+
+            }
+
+            .appbar p, h2 {
+            margin: 0;
+            }
+
+
+
+            @media (max-width: 768px) {
+
+                .appbar {
+                    margin: 0;
+                }
+
+
+
+            }
+
+        </style>
+
 
         <div class="appbar d-flex position-sticky sticky-top border-bottom border-2">
-            <div class="d-flex h-100 w-100 px-4 justify-content-between align-items-center" style="margin-left: 260px;">
+            <div class="d-flex h-100 w-100 px-4 justify-content-between align-items-center">
 
             <h2 class="fw-bold" style="font-size: 22px;">
                 <slot></slot>
