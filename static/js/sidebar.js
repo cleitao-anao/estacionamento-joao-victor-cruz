@@ -28,14 +28,14 @@ export class Sidebar extends HTMLElement {
                     </div>
 
                     <div class="d-flex flex-column align-items-start justify-content-start h-100 w-100 px-1">
-                        <a href="/apps/Dashboard - Senac Parking.html">
+                        <a href="/apps/Dashboard.html">
                             <div class="opcao op-dashboard">
                                 <img src="../static/Assets - projeto estacionamento/Icon-dashboard.svg" alt="">
                                 <p class="m-0">Dashboard</p>
                             </div>
                         </a>
 
-                        <a href="/">
+                        <a href="/apps/Con-user.html">
                             <div class="opcao op-Usuário">
                                 <img src="../static/Assets - projeto estacionamento/Icon-consultar-usuarios.svg" alt="">
                                 <p class="m-0">Consulta de Usuário</p>

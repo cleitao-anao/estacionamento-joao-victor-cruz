@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt=br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de Usuario - Senac Parking</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <style>
+    .pesquisa{
+      min-height: 85px;
+    }
+
+    .inputForm {
+      border-radius: 5px;
+      width: 100%;
+      background-color: #f2f3fa;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      transition: 0.2s ease-in-out;
+
+    }
+
+    .input {
+      background-color: #f2f3fa;
+      margin-left: 10px;
+      border-radius: 10px;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .input:focus {
+      outline: none !important;
+    }
+
+    .inputForm:focus-within {
+      border: 1.5px solid #2d79f3 !important;
+    }
+    @media(min-width: 1080px) {
+
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+  <m-sidebar>
+  </m-sidebar>
+  <m-appbar>
+    <span></span>
+  </m-appbar>
+
+  <m-corpo> <!-- * 🍕 corpo -->
+
+    <div class="d-flex flex-column justify-content-center mx-5 mt-5">
+
+      <div class="text-center">
+        <h1 class="fw-bold">Consulta de Usuário</h1>
+        <p class="">Pesquise por motoristas cadastrados ou veículos autorizados</p>
+      </div>
+
+
+      <div class="pesquisa d-flex justify-content-center p-3 w-100 border border-2 rounded rounded-4">
+        <form class="d-flex gap-2 w-100" action="GET">
+
+          <div class=" inputForm border border-2">
+            <i class="fa-solid fa-magnifying-glass" style="color: #727783;"></i>
+            <input type="text" class="input" id="cpf" placeholder="Digite CNH ou Placa (ex: ABC1234)..." required>
+
+          </div>
+
+            <select class=" px-2" name="" id="">
+              <option value="">CNH</option>
+            </select>
+
+            <button class="btn btn-primary h-100 px-3">Consultar</button>
+
+
+        </form>
+
+      </div>
+
+      
+      <div class="d-flex flex-column justify-content-center align-items-center mt-5 pt-4 ">
+        <div class="d-flex justify-content-center align-items-center rounded-circle border mb-3" style="height: 80px; width: 80px; background-color: #e7e8ef;">
+          <img class="opacity-50" src="../static/Assets - projeto estacionamento/Icon-consultar-usuarios.svg" alt="" style="width: 40px;">
+        </div>
+        <h3 class="fw-semibold text-body">Aguardando consulta</h3>
+        <p>Insira a placa ou CNH do usuário no campo acima para visualizar os detalhes da autorização.</p>
+      </div>
+
+
+
+      
+      <div class="d-flex flex-row gap-5 w-100">
+        
+        
+        <div class="d-flex flex-column gap-4 w-50 justify-content-center">
+          
+          <div class="d-flex row border p-4 rounded-4">
+            <img src="https://i.pravatar.cc/96" alt="" class="p-1 shadow-sm border rounded-circle" style="height: 96px; width: auto;">
+
+            <div class="d-flex flex-column justify-content-center w-auto">
+              <p class="m-0 fw-bold fs-4">Ricardo Silveira Fontes</p>
+              <p class="mb-1">Visitante / Senac Hub</p>
+              <p class="m-0 text-secondary" style="font-size: 13px;">Contato: (91) 987654321</p>
+            </div>
+
+          </div>
+
+          <div class="d-flex row border p-4 rounded-4 align-items-center">
+            <div class="d-flex justify-content-center align-items-center p-3 rounded-3 w-auto" style=" background-color: #c6d7e7;">
+              <img src="../static/Assets - projeto estacionamento/Icon-carro.svg" alt="">
+            </div>
+
+            <div class="d-flex flex-column w-auto">
+              <p class="m-0 fw-bold">Toyota Corolla</p>
+              <p class="m-0 text-secondary">Prata Metálico</p>
+            </div>
+
+            <div class="ms-auto w-auto border border-2 rounded-3 fw-bold text-primary p-2" style="background-color: #ecedf5;">
+              <span>BRA-2E19</span>
+            </div>
+
+          </div>
+          
+        </div>
+
+        
+        <div class="d-flex flex-column justify-content-center align-items-center w-50 h-auto rounded-4 text-bg-primary" style="background: #014380; background: linear-gradient(147deg,rgba(1, 67, 128, 1) 0%, rgba(0, 78, 148, 1) 50%, rgba(2, 106, 196, 1) 100%);">
+
+          <p class="mb-1">PAVIMENTO ESTACIONADO</p>
+          <p class="fw-bold fs-2 mb-1">G3</p>
+          <p class="m-0">★ Otimizado para fluxo atual</p>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      
+    </div>
+  </m-corpo> <!-- * 🍕 corpo -->
+
+
+
+
+  <script type="module" src="../static/js/lib.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
