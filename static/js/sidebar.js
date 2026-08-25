@@ -42,7 +42,7 @@ export class Sidebar extends HTMLElement {
                             </div>
                         </a>
 
-                        <a href="/">
+                        <a href="/apps/gestao-estacionamento.html">
                             <div class="opcao op-Entrada/Saída">
                                 <img src="../static/Assets - projeto estacionamento/Icon-registrar-entradas-e-saidas.svg" alt="">
                                 <p class="m-0">Registro de <br> Entrada/Saída</p>

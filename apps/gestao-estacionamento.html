@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt=br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestão de Estacionamento - Senac Parking</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/gestao-estacionamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+    <style>
+        p {
+            margin: 0 !important;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <m-sidebar>
+    </m-sidebar>
+    <m-appbar>
+        Gestão de Estacionamento
+    </m-appbar>
+
+    <m-corpo> <!-- * 🍕 corpo -->
+
+        <div class="d-flex flex-column align-items-center mt-3">
+
+            <div class="containe mb-3">
+                <div class="tabs">
+                    <input type="radio" id="radio-1" name="tabs" checked="">
+                    <label class="tab" for="radio-1">Entrada</label>
+                    <input type="radio" id="radio-2" name="tabs">
+                    <label class="tab" for="radio-2">Saida</label>
+                    <span class="glider"></span>
+                </div>
+            </div>
+
+
+            <div class="pesquisa d-flex justify-content-center p-3 mb-3 w-100 border border-2 rounded rounded-4">
+                <form class="d-flex gap-2 w-100" action="GET">
+
+                    <div class=" inputForm border border-2">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #727783;"></i>
+                        <input type="text" class="input" id="cpf" placeholder="Digite CNH ou Placa (ex: ABC1234)..."
+                            required>
+
+                    </div>
+
+                    <select class=" px-2" name="" id="">
+                        <option value="">CNH</option>
+                    </select>
+
+                    <button class="btn btn-primary h-100 px-3">Consultar</button>
+
+
+                </form>
+
+            </div>
+
+            <div class="d-flex flex-row gap-4 mb-4 w-100 h-100">
+
+                <div class="d-flex flex-column gap-4 w-50"> <!-- ! caixas lateral-->
+
+                    <div class="d-flex flex-column align-items-center border border-2 rounded-4 px-4 py-4">
+                        <!-- ! Conta-->
+                        <img src="https://i.pravatar.cc/96" alt="" class="p-1 shadow-sm border rounded-4 mb-2"
+                            style="height: 120px; width: 120px;">
+
+
+                        <p class="fs-4 fw-semibold m-1">Ricardo Silveira Fontes</p>
+                        <p class="m-0">Visitante / Senac Hub</p>
+
+                        <hr class="w-100 mt-4">
+
+                        <div class="d-flex justify-content-between w-100">
+                            <p class="text-secondary m-0" style="font-size: 14px;">CNH / Documento</p>
+                            <p class="fw-semibold m-0">048 .******- 91</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between w-100">
+                            <p class="text-secondary m-0" style="font-size: 14px;">Validade CNH</p>
+                            <p class="text-primary fw-semibold m-0">12/2026</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-start border border-2 rounded-4 px-4 py-4 gap-3">
+                        <!-- ! carro-->
+
+                        <div class="d-flex flex-row gap-3">
+
+                            <img class="p-3 rounded-3" style="width: 52px; height: 52px; background-color: #ccdeee;"
+                                src="../static/Assets - projeto estacionamento/Icon-carro.svg" alt="">
+
+                            <p><span class="fw-semibold" style="font-size: 20px;">Dados do Veículo</span> <br>
+                                Identificado via OCR</p>
+                        </div>
+
+                        <div class="d-flex w-100 justify-content-between py-3 px-3 rounded-3"
+                            style="background-color: #ecedf5;">
+                            <p>Placa</p>
+                            <p class="fw-bold fs-5 text-primary">BRA-2E19</p>
+                        </div>
+
+
+                        <div class="d-flex w-100 flex-row gap-3">
+
+                            <div class="d-flex flex-column p-3 border border-2 rounded-3"
+                                style="background-color: #ecedf5;">
+                                <p class="fw-bold text-secondary mb-1" style="font-size: 14px;">MODELO</p>
+                                <p class="fw-semibold fs-5">Toyota Corolla</p>
+                            </div>
+
+                            <div class="d-flex flex-column p-3 border border-2 rounded-3"
+                                style="background-color: #ecedf5;">
+                                <p class="fw-bold text-secondary mb-1" style="font-size: 14px;">COR</p>
+                                <p class="fw-semibold fs-5">Prata Metálica</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="d-flex flex-column gap-4 w-100 h-auto"> <!-- ! caixas direita-->
+
+                    <div class="d-flex flex-column align-items-start border border-2 rounded-4 px-4 py-4 gap-3 h-100">
+
+                        <h3>Alocação de Vaga</h3>
+                        <p>Otimização de fluxo baseada em ocupação em tempo real.</p>
+
+                        <div class="d-flex w-100 flex-row gap-3 mb-4">
+
+
+                            <div class="d-flex flex-column align-items-start w-100 p-4 h-auto rounded-4 text-bg-primary"
+                                style="background: #014380; background: linear-gradient(147deg,rgba(1, 67, 128, 1) 0%, rgba(0, 78, 148, 1) 50%, rgba(2, 106, 196, 1) 100%);">
+
+                                <p class="opacity-75 fw-semibold mb-0" style="font-size: 14px;">PAVIMENTO SUGERIDO</p>
+                                <p class="fw-bold fs-2 mb-2">G3</p>
+                                <p class="m-0">⚡︎ Menor tempo de manobra</p>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-start w-100 p-4 h-auto rounded-4 border border-2"
+                                style="background-color: #e7e8ef;">
+
+                                <p class="opacity-75 fw-semibold mb-0" style="font-size: 14px;">VAGAS DISPONÍVEIS</p>
+                                <p class="fw-bold fs-2 mb-2">42 <span class="fw-normal fs-6 text-secondary">/ 120</span>
+                                </p>
+
+                                <div class="progress w-100" style="background-color: #c2c6d3; height: 10px;"
+                                    role="progressbar" aria-label="10px high" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100" style="height: 20px">
+                                    <div class="progress-bar" style="background-color: #014380; width: 75%"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <label class="fw-bold text-secondary" for="">SELECIONAR PAVIMENTO</label>
+
+                        <select class="form-select fw-semibold" style="background-color: #e7e8ef;" name="" id="">
+                            <option value="">Pavimento G3 - 42 Vagas (Sugerido)</option>
+                        </select>
+
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <button class="btn btn-success rounded-4 p-3 fs-4 mb-0" style="background-color: #16a34a;"><i
+                                class="fa-solid fa-arrow-right-to-bracket" style="color: #fff;"></i> REGISTRAR ENTRADA
+                            ></button>
+                        <span class="text-center" style="font-size: 12px;">Ao clicar em registrar, o ticket será
+                            impresso automaticamente na estação 04.</span>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="d-flex w-100"> <!-- tabela-->
+
+                <m-secao class="d-flex w-100">
+                    <div slot="header" class="d-flex w-100 justify-content-between align-items-center">
+                        <p class="fw-semibold text-secondary m-0"><i class="fa-solid fa-clock-rotate-left" style="color: #727783;"></i>   ENTRADAS RECENTES</p>
+                        <div>
+                            <a href="">Ver Histórico Completo</a>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <table class="table text-center table-hover px-5">
+                            <thead>
+                                <tr class="table-secondary">
+                             
+                                    <th>PLACA</th>
+                                    <th>CONDUTOR</th>
+                                    <th>PAVIMENTO</th>
+                                    <th>HORÁRIO</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>KRA-0941</th>
+                                    <td>Marcos Paulo de Oliveira</td>
+                                    <td>G2</td>
+
+                                    <td>08:42:15</td>
+
+                                    <td class="fw-bold"> <span class=" px-3 py-1 rounded-4" style="background-color: #dcfce7 !important; color: #2e8f52 !important; font-size: 12px;">AUTORIZADA</span></td>
+                                </tr>
+                                <tr>
+                                    <th>KRA-0941</th>
+                                    <td>Marcos Paulo de Oliveira</td>
+                                    <td>G2</td>
+
+                                    <td>08:42:15</td>
+
+                                    <td class="fw-bold"> <span class=" px-3 py-1 rounded-4" style="background-color: #dcfce7 !important; color: #2e8f52 !important; font-size: 12px;">AUTORIZADA</span></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </m-secao>
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </m-corpo> <!-- * 🍕 corpo -->
+
+
+
+
+    <script type="module" src="../static/js/lib.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

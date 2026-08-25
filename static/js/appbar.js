@@ -21,7 +21,6 @@ export class Appbar extends HTMLElement {
             height: 64px;
             z-index: 9;
             background-color: var(--bs-body-bg);
-
             }
 
             .appbar p, h2 {
@@ -44,11 +43,13 @@ export class Appbar extends HTMLElement {
 
 
         <div class="appbar d-flex position-sticky sticky-top border-bottom border-2">
-            <div class="d-flex h-100 w-100 px-4 justify-content-between align-items-center">
+            <div class="d-flex h-100 w-100 px-4 justify-content-between align-items-center" style="margin-left: 260px;">
 
-            <h2 class="fw-bold" style="font-size: 22px;">
-                <slot></slot>
-            </h2>
+            <div class="pe-4 border-end">
+                <h2 class="fw-semibold" style="font-size: 22px;">
+                    <slot></slot>
+                </h2>
+            </div>
 
             <div class="d-flex ps-4 flex-row align-items-center border-start gap-2">
                 <div class="d-flex align-items-end flex-column" style="line-height: 14px;">
