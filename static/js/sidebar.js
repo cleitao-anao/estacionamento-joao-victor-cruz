@@ -49,7 +49,7 @@ export class Sidebar extends HTMLElement {
                             </div>
                         </a>
 
-                        <a href="/">
+                        <a href="/apps/cadastro-rapido.html">
                             <div class="opcao dashboard">
                                 <img src="../static/Assets - projeto estacionamento/Icon-cadastro-rapido.svg" alt="">
                                 <p class="m-0">Cadastro Rápido</p>

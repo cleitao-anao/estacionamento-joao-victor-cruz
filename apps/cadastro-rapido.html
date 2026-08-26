@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt=br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro Rápido - Senac Parking</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <style>
+        p {
+            margin: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <m-sidebar>
+    </m-sidebar>
+    <m-appbar>
+        Cadastro Rápido
+    </m-appbar>
+
+    <m-corpo> <!-- * 🍕 corpo -->
+
+        <div class="d-flex flex-column py-4 px-5">
+            <h1 class="fw-bold">Cadastro Rápido</h1>
+            <p class="mb-4">Registre novos visitantes de forma ágil e segura.</p>
+            
+            <div class="d-flex flex-column border border-2 rounded-3 p-4 gap-3">
+                <div class="border-bottom border-2 pb-2">
+                    <p class="d-flex gap-2 fs-4 fw-semibold align-items-center"><img
+                        src="../static/Assets - projeto estacionamento/Icon-informacoes-pessoais.svg" alt=""
+                        style="height: 20px;"> Informações Pessoais</p>
+                    </div>
+                    
+                    <div class="d-flex flex-column">
+                        <label for="">Nome Completo</label>
+                        <input class="" placeholder="Ex: João da Silva Santos" type="text">
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col d-flex flex-column">
+                            <label for="">CNH (Documento)</label>
+                            <input class="" placeholder="0000000000" type="text">
+                        </div>
+                        
+                        <div class="col d-flex flex-column">
+                            <label for="">Nome Completo</label>
+                            <input class="" placeholder="(11) 99999-9999" type="text">
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="border-bottom border-2 pb-2">
+                        <p class="d-flex gap-2 fs-4 fw-semibold align-items-center"><img
+                            src="../static/Assets - projeto estacionamento/Icon-carro.svg" alt="" style="height: 20px;">
+                            Dados do Veiculo</p>
+                        </div>
+                        
+                        <div class="row">
+                            
+                            <div class="col d-flex flex-column">
+                                <label for="">Placa</label>
+                                <input class="" placeholder="ABC-1234" type="text">
+                            </div>
+                            
+                            <div class="col d-flex flex-column">
+                                <label for="">Marca</label>
+                                <select name="Marca" id="">
+                                    <option value="">Selecione a Marca</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            
+                            <div class="col d-flex flex-column">
+                                <label for="">Modelo</label>
+                                <input class="" placeholder="Ex: Gol, Civic, Corolla" type="text">
+                            </div>
+                            
+                            <div class="col d-flex flex-column">
+                                <label for="">Marca</label>
+                                <input type="text" placeholder="Ex: Branco, Preto, Prata">
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mt-4">
+                            <button class="btn btn-outline-secondary px-4">Limpar Campos</button>
+                <button class="btn btn-primary px-4">Cadastrar Visitante <i class="fa-solid fa-arrow-right" style="color: #fff;"></i></button>
+            </div>
+            
+        </div>
+        
+        <p class="text-center text-secondary mt-2">ⓘ O visitante será automaticamente registrado no sistema como "Aguardando Entrada".</p>
+
+    </div>
+    </m-corpo> <!-- * 🍕 corpo -->
+
+
+
+
+    <script type="module" src="../static/js/lib.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
