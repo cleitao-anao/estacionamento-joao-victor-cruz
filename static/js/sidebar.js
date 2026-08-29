@@ -63,7 +63,7 @@ export class Sidebar extends HTMLElement {
                             </div>
                         </a>
 
-                        <a href="/">
+                        <a href="/apps/alerta.html">
                             <div class="opcao dashboard">
                                 <img src="../static/Assets - projeto estacionamento/Icon-alertas.svg" alt="">
                                 <p class="m-0">Alertas</p>
